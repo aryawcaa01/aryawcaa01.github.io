@@ -1,174 +1,396 @@
 <!DOCTYPE html>
-<html class="nodarken"><head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta property="og:description" content="Simple page">
-  <meta property="og:url" content="#">
-  <meta property="og:image" content="/images/ta.png">
-  <meta property="og:site_name" content="Arya wicaksana">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title>Arya | Wicaksana</title>
-<link rel="shortcut icon" href="./SpinKit _ Simple CSS Spinners_files/favicon.ico">
-  <link href="./SpinKit _ Simple CSS Spinners_files/css" rel="stylesheet" type="text/css">
-  <link rel="icon" href="./SpinKit _ Simple CSS Spinners_files/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./SpinKit _ Simple CSS Spinners_files/spinkit.css">
-
-  <script type="text/javascript" async="" src="./SpinKit _ Simple CSS Spinners_files/ga.js"></script><script src="./SpinKit _ Simple CSS Spinners_files/jquery.min.js"></script>
-  <script src="./SpinKit _ Simple CSS Spinners_files/anime.min.js"></script>
-	<script type="text/javascript" src="./SpinKit _ Simple CSS Spinners_files/app.js"></script>
-	<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-7944098-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-  </script>
-	<script type="text/javascript" src="./SpinKit _ Simple CSS Spinners_files/spinkit.js"></script>
-	<script id="_carbonads_projs" type="text/javascript" src="./SpinKit _ Simple CSS Spinners_files/CKYIEKQN.json"></script>
-	<script language="Javascript1.2">
+<html>
+<head>
 
 
-// Set the message for the alert box
-am = "Sorry,This function is disabled!";
+  <title>Welcome|Store</title>
 
-// do not edit below this line
-// ===========================
-bV  = parseInt(navigator.appVersion)
-bNS = navigator.appName=="Netscape"
-bIE = navigator.appName=="Microsoft Internet Explorer"
 
-function nrc(e) {
-  if (bNS && e.which > 1){
-     alert(am)
-     return false
-  } else if (bIE && (event.button >1)) {
-    alert(am)
-    return false;
-  }
-}
-
-document.onmousedown = nrc;
-if (document.layers) window.captureEvents(Event.MOUSEDOWN);
-if (bNS && bV<5) window.onmousedown = nrc;
-
-</script>
-<script>
-var coll = document.getElementsByClassName("nav-link");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
+  <!--css-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
 </head>
+<style media="screen">
+.group 			  {
+  position:relative;
+  margin-bottom:45px;
+}
+.custom 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px;
+}
+input:focus 		{ outline:none; }
 
-<body class="active1" id="spinkit">
+/* LABEL ======================================= */
+label 				 {
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:-3px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
 
-    <div class="site-nav-animation-wrapper menu-animation-wrapper">
-      <div class="site-nav-animated-background menu-animated-background" style="opacity: 1; transform: scale(0);"></div>
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  left:-15px;
+  font-size:14px;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+</style>
+<body class="grey darken-4">
+  <ul id="slide-out" class="sidenav grey darken-4" style="overflow:hidden;">
+  <li><div class="user-view">
+    <div class="background black">
+      <img src="">
     </div>
-    <a href="#" class="menu menu-white menu-spinkit">
-      <span class="menu-icon-line-1 menu-icon-line"></span>
-      <span class="menu-icon-line-2 menu-icon-line"></span>
-      <span class="menu-icon-line-3 menu-icon-line"></span>
-    </a>
-
-    <div class="site-nav-overlay js-nav" style="opacity: 0;">
-      <div class="nav-content">
-        <div class="js-nav-header nav-header" style="opacity: 1;">
-          <span class="nav-header-text">Arya Wicaksana</span>
-          <div class="nav-header-line js-nav-header-line" style="transform: scale(0.5);"></div>
-        </div>
-
-        <ul class="nav-categories">
-          <li class="" style="opacity: 1; transform: translateY(0px) scale(1);"><a class="">
-							<div>
-									<img src="./SpinKit _ Simple CSS Spinners_files/user.png" alt="avatar"width="100px"height="100px">
-							</div>
-					</a>
-				</li>
-          <li class="nav-category js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);"><a class="nav-link">Personal Data</a></li>
-
-          <li class="nav-category js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);"><a class="nav-link">Education</a></li>
-          <li class="nav-category js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);"><a class="nav-link">Other info</a></li>
-        </ul>
-
-        <div class="nav-sublinks js-nav-animate" style="opacity: 1; transform: translateY(0px) scale(1);">
-        </div>
-      </div>
-
-    </div>
-
-
-
-<div id="">
-  <ul class="source-list">
-  </ul>
-</div>
-
-<a id="prev" class="navigation-arrow"><img src="./SpinKit _ Simple CSS Spinners_files/arrow.svg" alt="" width="28" height="42"></a>
-
-<div id="preview-area">
-  <ul id="spinners">
-
-    <li class="selected">
-<h1>This website is being constructed</h1>
+    <a><img class="circle materialboxed" src="img/yuna.jpg"></a>
+    <a href="#modal2"class=" modal-trigger"><span class="white-text name">Sri</span></a>
+    <ul class="collapsible " href="#">
+      <li>
+      <div class="collapsible-header"><span class="white-text email">Srit1@gmail.com <i class="material-icons right">arrow_drop_down</i></span></div>
+      <div class="collapsible-body black"><span class="text-White">Lorem ipsum dolor sit amet.</span></div>
     </li>
-    <li>
-	    <div class="">
-		    <h1>E-mail Me!!!<h1>
-  <form method="POST" action="https://formspree.io/arthas@outlook.co.id">
-    <label for="fname">E-mail</label>
-    <input type="email" id="fname" name="email" required="required" placeholder="E-mail">
+    </ul>
+  </div></li>
+  <li><a class="waves-effect white-text" href="#!"><i class="material-icons">question_answer</i>Chat <span class="new badge">4</span></div></a></li>
+  <li><div class="divider"></div></li>
+  <li><a class="waves-effect white-text" href="#!"><i class="material-icons">attach_money</i>Donations</a></li>
+  <li><div class="divider"></div></li>
+  <li><a class="waves-effect white-text modal-trigger" href="#modal1""><i class="material-icons">settings</i>Settings</a></li>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <li><a class="waves-effect waves-red white-text"><i class="material-icons">power_settings_new</i>log out</a></li>
 
-    <label for="lname">Name</label>
-    <input type="text" required="required" id="lname" name="name" placeholder="Name">
-    <label for="subject">Subject</label>
-    <input type="text" required="required" id="subject"  name="message" placeholder="Write something.." style="height:100px">
-    <input type="submit" value="Send=>">
+  </ul>
+<div class="navbar-fixed">
+  <nav class="grey darken-3">
+  <ul id="nav-mobile" data-target="slide-out" href="#"class="sidenav-trigger btn-flat">
+    <li><i class=" center large material-icons col s12">menu</i></li>
+  </ul>
+  <div class=" nav-wrapper container row nav-mobile ">
+    <form class="container row">
+
+    <div class="group col s10 right">
+      <input class="custom white-text" type="text" required>
+      <label><i class="material-icons small">search</i></label>
+    </div>
+
+
   </form>
+  </div>
+  </nav>
 </div>
-    </li>
-    <li class="rectangle-bounce">
 
-    </li>
-    <li class="wandering-cubes">
+<div id="modal1" class="modal modal-fixed-footer grey">
+    <div class="modal-content">
+      <h4><i class="material-icons">settings</i>| Settings</h4>
+          <nav><div class="divider"></div></nav>
+      <p>
 
-    </li>
-    <li class="selected">
-
-    </li>
-  </ul>
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancel</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
+    </div>
 </div>
-<a id="next" class="navigation-arrow"><img src="./SpinKit _ Simple CSS Spinners_files/arrow.svg" alt="" width="28" height="42"></a>
+  <div id="modal2" class="modal black wh row carousel-fixed-item ">
+      <div class="col s12">
+        <h4><i class="material-icons">settings</i>| Settings</h4>
+            <div class="divider"></div>
+        <p>
 
-<footer>
-  <a href="" class="profile-link">by <strong>@Arya Wicaksana</strong><span class="additional-info"> with ❤</span><span class="underline"></span></a>
+        </p>
+        <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancel</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Save</a>
 
-  <ul class="pagination">
-    <li><a class="selected" href="#"><span></span></a></li>
-    <li><a href="#"><span></span></a></li>
-    <li><a href="#"><span></span></a></li>
-    <li><a href="#"><span></span></a></li>
-    <li><a href="#"><span></span></a></li>
-  </ul>
+      </div>
+    </div>
+  <div class="divider"></div>
+<div class="container row" style="height:400px;">
+  <div class="carousel carousel-slider center">
+    <div class="#">
+      <a class="carousel-item card change" href="#one!"><img src="img/5-aplikasi-terbaik.jpg"></a>
+      <a class="carousel-item card change" href="#two!"><img src="img/5-aplikasi-terbaik.jpg"></a>
+      <a class="carousel-item card change" href="#three!"><img src="img/5-aplikasi-terbaik.jpg"></a>
+      <a class="carousel-item card change" href="#four!"><img src="img/5-aplikasi-terbaik.jpg"></a>
+      <a class="carousel-item card change" href="#five!"><img src="img/5-aplikasi-terbaik.jpg"></a>
+    </div>
+  </div>
+<br>
+<div class="row">
+  <div class="col s12 white-text">
+  Brain games
+<span class="new badge waves-effect" data-badge-caption="more"></span><div class="divider inline"></div>
+</div>
+</div>
 
-</footer>
+
+<!--content-->
+
+<div class="row card ">
+  <div class="col s12">
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+      </div>
+      </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    </div>
+
+</div>
+<div class="row">
+  <div class="col s12 white-text">
+  Science
+<span class="new badge waves-effect" data-badge-caption="more"></span><div class="divider inline"></div>
+</div>
+<br>
+<div class="row">
+  <div class="col s12 white-text">
+  Science
+<span class="new badge waves-effect" data-badge-caption="more"></span><div class="divider inline"></div>
+</div>
+<!--content-->
+<div class="row carousel-item card">
+  <div class="col s12">
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+      </div>
+      </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
 
 
+</div>
 
-</body></html>
+</div>
+<br>
+<div class="row">
+  <div class="col s12 white-text">
+  Education
+<span class="new badge waves-effect" data-badge-caption="more"></span><div class="divider inline"></div>
+</div>
+</div>
+
+<!--content-->
+
+<div class="row card">
+  <div class="col s12">
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+      </div>
+      </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    </div>
+
+</div>
+<div class="row ">
+  <div class="col s12 white-text">
+  Other
+<span class="new badge waves-effect" data-badge-caption="more"></span><div class="divider inline"></div>
+</div>
+</div>
+
+<!--content-->
+
+<div class="row card">
+  <div class="col s12">
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+      </div>
+      </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    <div class="card col s3 m1">
+      <div class="card-image"><img src="img/card.jpg">
+        <span class="card-title"></span>
+
+      </div>
+    </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+  public class ViewPagerIdlingResource implements IdlingResource {
+     var instance = M.Carousel.getInstance(elem);
+     int a = 1
+    private final String mName;
+
+    private boolean mIdle = true; // Default to idle since we can't query the scroll state.
+
+    private ResourceCallback mResourceCallback;
+
+    public ViewPagerIdlingResource(ViewPager viewPager, String name) {
+        viewPager.addOnPageChangeListener(new ViewPagerListener());
+        mName = name;
+    }
+
+    @Override
+    public String getName() {
+        return mName;
+    }
+
+    @Override
+    public boolean isIdleNow() {
+
+    }
+
+    @Override
+    public void registerIdleTransitionCallback(ResourceCallback resourceCallback) {
+        mResourceCallback = resourceCallback;
+    }
+
+    private class ViewPagerListener extends ViewPager.SimpleOnPageChangeListener {
+
+        @Override
+        public void onPageScrollStateChanged(int state) {
+            mIdle = (state == ViewPager.SCROLL_STATE_IDLE
+                    // Treat dragging as idle, or Espresso will block itself when swiping.
+                    || state == ViewPager.SCROLL_STATE_DRAGGING);
+            if (mIdle && mResourceCallback != null) {
+                mResourceCallback.onTransitionToIdle();
+            }
+        }
+    }
+}
+</script>
+
+
+<!--js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  var tab = 0;
+  changE()
+  function changE(){
+    var i;
+     var instance = M.Carousel.getInstance(elem);
+     for (i = 0; i < 5; i+1) {
+       x[i].instance.next(i);
+     }
+  }
+
+</script>
+
+<script>
+  $('.carousel.carousel-slider').carousel({
+
+     indicators: true,
+     padding: 25,
+     fullWidth:true,
+   });
+$(document).ready(function(){
+ $('input.autocomplete').autocomplete({
+   data: {
+     "Apple": null,
+     "Microsoft": null,
+     "Google": 'https://placehold.it/250x250'
+   },
+ });
+});
+
+$(document).ready(function(){
+   $('.sidenav').sidenav();
+ });
+
+ $(document).ready(function(){
+   $('.materialboxed').materialbox();
+ })
+
+ $(document).ready(function(){
+ $('.modal').modal();
+ });
+
+ $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+ <!--custom-->
+</script>
+
+
+</body>
+
+
+<!--js-->
+
+
+</html>
